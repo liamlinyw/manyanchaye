@@ -1,0 +1,38 @@
+const list = new Array(10).fill().map((item, index) => {
+	return {
+		uid: '638707b11e4b660001619644',
+		shop: {
+			"_id": "6388247c3aeb530001817b95",
+			"name": "测试门店0",
+			"address": "测试门店地址0",
+			"hours": "00:00-24:00",
+			"mobile": "19959655960",
+			"location": {
+				"type": "Point",
+				"coordinates": [
+					113.05307567044557,
+					28.073446326438436
+				]
+			}
+		},
+		products: [
+			{
+				_id: "637a5beeff2a540001476410",
+				name: "测试商品0",
+				price: 1000
+			},
+			{
+				_id: "637a5beeff2a540001476411",
+				name: "测试商品1",
+				price: 1000
+			}
+		],
+		amount: 200
+	}
+})
+
+db.collection('order').add(list)
+
+db.collection('order').where({
+	uid: '638707b11e4b660001619644'
+}).remove()

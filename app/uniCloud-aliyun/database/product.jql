@@ -1,0 +1,17 @@
+const list = new Array(10).fill().map((item, index) => {
+	return {
+		name: `测试商品${index}`,
+		packetPrice: 1000,
+		boxPrice: 2000,
+		cattyPrice: 3000,
+	}
+})
+
+// db.collection('product').add(list)
+
+db.collection('product').update({
+	boxPrice: 0,
+	cattyPrice: 0,
+})
+
+// db.collection('product').where({}).remove()

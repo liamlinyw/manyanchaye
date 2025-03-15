@@ -1,0 +1,14 @@
+const list = new Array(10).fill().map((item, index) => {
+	return {
+		name: `测试门店${index}`,
+		address: `测试门店地址${index}`,
+		hours: '00:00-24:00',
+		mobile: '19959655960',
+		location: new db.Geo.Point(Math.random() * 0.1 + 113, Math.random() * 0.1 + 28),
+		staff: ['19959655960']
+	}
+})
+
+db.collection('shop').add(list)
+
+db.collection('shop').where({}).remove()

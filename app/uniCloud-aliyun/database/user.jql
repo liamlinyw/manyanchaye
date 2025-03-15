@@ -1,0 +1,6 @@
+const uniIdCo = uniCloud.importObject('uni-id-co')
+await uniIdCo.registerAdmin({
+  username: 'admin',
+  password: 'admin',
+  nickname: 'admin'
+})

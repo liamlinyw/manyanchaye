@@ -1,0 +1,33 @@
+{
+  "bsonType": "object",
+  "required": ["uid", "card"],
+  "permission": {
+    "read": true,
+    "create": false,
+    "update": false,
+    "delete": false
+  },
+  "properties": {
+    "_id": {
+      "description": "ID，系统自动生成"
+    },
+    "uid": {
+      "bsonType": "string",
+			"foreignKey": "uni-id-users._id"
+    },
+    "staff": {
+      "bsonType": "object"
+    },
+    "card": {
+      "bsonType": "object"
+    },
+    "createTime": {
+			"forceDefaultValue": {
+			  "$env": "now"
+			}
+    },
+    "payTime": {
+      "bsonType": "timestamp"
+    }
+  }
+}

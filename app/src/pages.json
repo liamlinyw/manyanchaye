@@ -1,0 +1,102 @@
+{
+  "pages": [
+    {
+      "path": "pages/shop/index"
+    },
+    {
+      "path": "pages/shop/manage",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+    },
+    {
+      "path": "pages/shop/create"
+    },
+    {
+      "path": "pages/order/index",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+    },
+    {
+      "path": "pages/order/create"
+    },
+    {
+      "path": "pages/order/manage",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+    },
+    {
+      "path": "pages/order/calc"
+    },
+  
+    {
+      "path": "pages/user/index",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+    },
+    {
+      "path": "pages/user/login/loginByWx"
+    },
+    {
+      "path": "pages/user/profile"
+    },
+    {
+      "path": "pages/user/wallet"
+    },
+    {
+      "path": "pages/user/customer",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+    },
+    {
+      "path": "pages/product/manage",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+    },
+    {
+      "path": "pages/product/create"
+    },
+    {
+      "path": "pages/recharge/index",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "backgroundColor": "#ffffff",
+    "color": "#2a2a2a",
+    "selectedColor": "#31c374",
+    "list": [
+      {
+        "iconPath": "static/tab/home.png",
+        "selectedIconPath": "static/tab/home$.png",
+        "text": "门店",
+        "pagePath": "pages/shop/index"
+      },
+      {
+        "iconPath": "static/tab/work.png",
+        "selectedIconPath": "static/tab/work$.png",
+        "text": "订单",
+        "pagePath": "pages/order/index"
+      },
+      {
+        "iconPath": "static/tab/user.png",
+        "selectedIconPath": "static/tab/user$.png",
+        "text": "会员",
+        "pagePath": "pages/user/index"
+      }
+    ]
+  }
+}

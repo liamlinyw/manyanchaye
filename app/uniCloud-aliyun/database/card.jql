@@ -1,0 +1,34 @@
+const list = [
+	{
+		amount: 500000,
+		give: 80000
+	},
+	{
+		amount: 1000000,
+		give: 200000
+	},
+	{
+		amount: 2000000,
+		give: 600000
+	},
+	{
+		amount: 3000000,
+		give: 1000000
+	},
+	{
+		amount: 5000000,
+		give: 2000000
+	},
+	{
+		amount: 10000000,
+		give: 4888800
+	},
+	{
+		amount: 20000000,
+		give: 9800000
+	}
+]
+
+db.collection('card').add(list)
+
+// db.collection('card').where({}).remove()

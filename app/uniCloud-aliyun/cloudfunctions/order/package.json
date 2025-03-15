@@ -1,0 +1,11 @@
+{
+  "name": "order",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "uni-id-common": "file:../../../src/uni_modules/uni-id-common/uniCloud/cloudfunctions/common/uni-id-common",
+    "uni-open-bridge-common": "file:../../../src/uni_modules/uni-open-bridge-common/uniCloud/cloudfunctions/common/uni-open-bridge-common"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

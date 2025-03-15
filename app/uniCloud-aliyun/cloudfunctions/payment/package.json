@@ -1,0 +1,12 @@
+{
+  "name": "pay",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "uni-id-common": "file:../../../src/uni_modules/uni-id-common/uniCloud/cloudfunctions/common/uni-id-common",
+    "uni-open-bridge-common": "file:../../../src/uni_modules/uni-open-bridge-common/uniCloud/cloudfunctions/common/uni-open-bridge-common",
+    "uni-pay": "file:../../../src/uni_modules/uni-pay/uniCloud/cloudfunctions/common/uni-pay"
+  },
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
