@@ -159,7 +159,7 @@ onPullDownRefresh(async () => {
           <view>余额充值</view>
           <view><u-icon name="arrow-right" /></view>
         </view>
-        <view v-if="false" class="item" @click="_requestSubscribeMessage">
+        <view class="item" @click="_requestSubscribeMessage">
           <view>订阅通知</view>
           <view><u-icon name="arrow-right" /></view>
         </view>

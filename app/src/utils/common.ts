@@ -37,13 +37,16 @@ export const jumpUserRecharge = async (mobile?: string) => {
 }
 
 export const requestSubscribeMessage = async () => {
-  // return await new Promise<Dict>((resolve) => {
-  //   uni.requestSubscribeMessage({
-  //     tmplIds: ['yq5UoDGQb-BNNePGyQVs_spmv59lCXU0HESm98bshy4', 'ghuA0J0_CDtoRbZKzdw4z-akOwXP9FSl0psRCZs95j8'],
-  //     success: (res) => {
-  //       resolve(res)
-  //     },
-  //   })
-  // })
-  return {} as any
+  return await new Promise<Dict>((resolve) => {
+    uni.requestSubscribeMessage({
+      tmplIds: ['-NYdGqaBc4sFVBI2YbDXtTrI6sBeP4ycloZcurKa2z0', 'NOxtTxW9OE0XcL1yHThJeqU7W8-VSmWB7FS-8sZ0By8'],
+      success: (res) => {
+        console.log(res)
+        resolve(res)
+      },
+      fail: (err) => {
+        console.log(err)
+      },
+    })
+  })
 }
